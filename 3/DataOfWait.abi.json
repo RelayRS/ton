@@ -11,19 +11,26 @@
 			]
 		},
 		{
-			"name": "add",
+			"name": "comeLast",
 			"inputs": [
-				{"name":"value","type":"uint256"}
+				{"name":"value","type":"string"}
 			],
 			"outputs": [
 			]
 		},
 		{
-			"name": "sum",
+			"name": "callNext",
 			"inputs": [
 			],
 			"outputs": [
-				{"name":"sum","type":"uint256"}
+			]
+		},
+		{
+			"name": "waitSurname",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"waitSurname","type":"string[]"}
 			]
 		}
 	],
@@ -35,6 +42,6 @@
 		{"name":"_pubkey","type":"uint256"},
 		{"name":"_timestamp","type":"uint64"},
 		{"name":"_constructorFlag","type":"bool"},
-		{"name":"sum","type":"uint256"}
+		{"name":"waitSurname","type":"string[]"}
 	]
 }
