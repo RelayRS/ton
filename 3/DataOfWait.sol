@@ -35,14 +35,17 @@ contract DataOfWait {
 	}
 
 	function comeLast(string value) public checkOwnerAndAccept{
+		//Добавляем ФАмилию в очередь
 		waitSurname.push(value);
 	}
 	function callNext() public checkOwnerAndAccept{
-		uint l = waitSurname.length -1 ;
-		delete waitSurname[0];
+		// Измерием Длинну массива
+		uint l = waitSurname.length -1 ; 
+		//Переносим очередь
 		for(uint i = 0 ; i < l ; i++){
-			waitSurname [i] = waitSurname[i+1];
+			waitSurname [i] = waitSurname[i+1]; 
 		}
+		//Убираем излишки
 		waitSurname.pop();
 	}
 }
